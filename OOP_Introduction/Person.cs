@@ -4,8 +4,10 @@ namespace OOP_Introduction
 {
   class Person
   {
-    string firstName;
-    string lastName;
+    public string firstName;
+    public string lastName;
+    public string salutation;
+    publi DateTime DOB;
 
     // class variables as properties
     //public string firstName { get; set; }
@@ -20,7 +22,7 @@ namespace OOP_Introduction
     /// <returns>Person's full name</returns>
     string getName()
     {
-      return firstName + " " + lastName;
+      return salutation +"."+ firstName + " " + lastName;
     }
 
     /// <summary>
@@ -30,6 +32,8 @@ namespace OOP_Introduction
     {
       firstName = "John";
       lastName = "Doe";
+      salutation = "Mr"
+      DOB = DateTime.Now;
     }
 
     /// <summary>
